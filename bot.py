@@ -20,7 +20,7 @@ logging.basicConfig(
 
 # === CONFIGURATION ===
 TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_LIST = [8617408271] 
+ADMIN_LIST = [8954823247] 
 
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "username_telegram_kamu") 
 EXCEL_FILE = "Masterdata_bg.xlsx"
