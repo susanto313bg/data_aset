@@ -19,7 +19,7 @@ logging.basicConfig(
 )
 
 # === CONFIGURATION ===
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("8617408271:AAEIdHQ0PShrKql_2PUn5O4_DK84EZ9PBI4")
 ADMIN_LIST = [8954823247] 
 
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "username_telegram_kamu") 
