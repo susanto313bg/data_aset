@@ -20,8 +20,12 @@ logging.basicConfig(
 
 # === CONFIGURATION ===
 TOKEN = os.getenv("BOT_TOKEN")
-ADMIN_LIST = [8617408271] 
 
+# Membaca ADMIN_ID dari Railway (Bisa pakai koma jika admin lebih dari 1, contoh: 8954823247,12345678)
+ADMIN_ID_ENV = os.getenv("ADMIN_ID", "8954823247")
+ADMIN_LIST = [int(x.strip()) for x in ADMIN_ID_ENV.split(",") if x.strip().isdigit()]
+
+# Membaca ADMIN_USERNAME dari Railway (Tanpa tanda @)
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "username_telegram_kamu") 
 EXCEL_FILE = "Masterdata_bg.xlsx"
 
